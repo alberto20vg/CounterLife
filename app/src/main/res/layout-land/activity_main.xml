@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:background="@drawable/fondo_negro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:background="#000000">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fondo_azul"
+                    android:padding="5dp"
+                    android:rotation="180">
+
+                    <TextView
+                        android:id="@+id/contador1"
+                        android:layout_width="57dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/dialg_border"
+                        android:text="40"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.524"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/sumar1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="36dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/contador1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/contador1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <ImageView
+                        android:id="@+id/restar1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="32dp"
+                        app:layout_constraintEnd_toStartOf="@+id/contador1"
+                        app:layout_constraintHorizontal_bias="0.708"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/tierra_1_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tierra_1_2"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/restar1"
+                        app:layout_constraintVertical_bias="0.114"
+                        app:srcCompat="@drawable/negro" />
+
+                    <ImageView
+                        android:id="@+id/tierra_1_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/sumar1"
+                        app:layout_constraintHorizontal_bias="0.495"
+                        app:layout_constraintStart_toEndOf="@+id/restar1"
+                        app:layout_constraintTop_toBottomOf="@+id/contador1"
+                        app:layout_constraintVertical_bias="0.225"
+                        app:srcCompat="@drawable/blanco" />
+
+                    <ImageView
+                        android:id="@+id/tierra_1_3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/tierra_1_2"
+                        app:layout_constraintTop_toBottomOf="@+id/sumar1"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:srcCompat="@drawable/rojo" />
+
+                    <ImageView
+                        android:id="@+id/restar1_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/restar1"
+                        app:layout_constraintEnd_toStartOf="@+id/restar1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/restar1"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/sumar1_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/sumar1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/sumar1"
+                        app:layout_constraintTop_toTopOf="@+id/sumar1"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <ImageView
+                        android:id="@+id/reinicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.022"
+                        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/sumar1_5"
+                        app:layout_constraintEnd_toEndOf="@+id/sumar1_5"
+                        app:layout_constraintStart_toStartOf="@+id/sumar1_5" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/restar1_5"
+                        app:layout_constraintEnd_toEndOf="@+id/restar1_5"
+                        app:layout_constraintStart_toStartOf="@+id/restar1_5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fondo_blanco"
+                    android:rotation="180">
+
+                    <TextView
+                        android:id="@+id/contador2"
+                        android:layout_width="57dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/dialg_border"
+                        android:text="40"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.524"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/sumar2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="36dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/contador2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/contador2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <ImageView
+                        android:id="@+id/restar2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="32dp"
+                        app:layout_constraintEnd_toStartOf="@+id/contador2"
+                        app:layout_constraintHorizontal_bias="0.708"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/tierra_2_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tierra_2_2"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/restar2"
+                        app:layout_constraintVertical_bias="0.114"
+                        app:srcCompat="@drawable/azul" />
+
+                    <ImageView
+                        android:id="@+id/tierra_2_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="45dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/sumar2"
+                        app:layout_constraintHorizontal_bias="0.495"
+                        app:layout_constraintStart_toEndOf="@+id/restar2"
+                        app:layout_constraintTop_toBottomOf="@+id/contador2"
+                        app:layout_constraintVertical_bias="0.225"
+                        app:srcCompat="@drawable/negro" />
+
+                    <ImageView
+                        android:id="@+id/tierra_2_3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/tierra_2_2"
+                        app:layout_constraintTop_toBottomOf="@+id/sumar2"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:srcCompat="@drawable/rojo" />
+
+                    <ImageView
+                        android:id="@+id/restar2_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/restar2"
+                        app:layout_constraintEnd_toStartOf="@+id/restar2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/restar2"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/sumar2_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/sumar2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/sumar2"
+                        app:layout_constraintTop_toTopOf="@+id/sumar2"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/restar2_5"
+                        app:layout_constraintEnd_toEndOf="@+id/restar2_5"
+                        app:layout_constraintStart_toStartOf="@+id/restar2_5" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/sumar2_5"
+                        app:layout_constraintEnd_toEndOf="@+id/sumar2_5"
+                        app:layout_constraintStart_toStartOf="@+id/sumar2_5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:background="#000000">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fondo_rojo">
+
+                    <TextView
+                        android:id="@+id/contador3"
+                        android:layout_width="57dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/dialg_border"
+                        android:text="40"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.483"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/sumar3"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="36dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/contador3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <ImageView
+                        android:id="@+id/restar3"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="40dp"
+                        app:layout_constraintEnd_toStartOf="@+id/contador3"
+                        app:layout_constraintHorizontal_bias="0.686"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/tierra_3_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tierra_3_2"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/restar3"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/azul" />
+
+                    <ImageView
+                        android:id="@+id/tierra_3_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/sumar3"
+                        app:layout_constraintHorizontal_bias="0.487"
+                        app:layout_constraintStart_toEndOf="@+id/restar3"
+                        app:layout_constraintTop_toBottomOf="@+id/contador3"
+                        app:layout_constraintVertical_bias="0.354"
+                        app:srcCompat="@drawable/blanco" />
+
+                    <ImageView
+                        android:id="@+id/tierra_3_3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/tierra_3_2"
+                        app:layout_constraintTop_toBottomOf="@+id/sumar3"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:srcCompat="@drawable/negro" />
+
+                    <ImageView
+                        android:id="@+id/restar3_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toTopOf="@+id/tierra_3_1"
+                        app:layout_constraintEnd_toStartOf="@+id/restar3"
+                        app:layout_constraintHorizontal_bias="0.53"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/restar3"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/sumar3_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/sumar3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/sumar3"
+                        app:layout_constraintTop_toTopOf="@+id/sumar3"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/sumar3_5"
+                        app:layout_constraintEnd_toEndOf="@+id/sumar3_5"
+                        app:layout_constraintHorizontal_bias="0.482"
+                        app:layout_constraintStart_toStartOf="@+id/sumar3_5" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/restar3_5"
+                        app:layout_constraintEnd_toEndOf="@+id/restar3_5"
+                        app:layout_constraintStart_toStartOf="@+id/restar3_5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:background="#000000">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fondo_negro">
+
+                    <TextView
+                        android:id="@+id/contador4"
+                        android:layout_width="57dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/dialg_border"
+                        android:text="40"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/sumar4"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="36dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/contador4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/contador4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <ImageView
+                        android:id="@+id/restar4"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="32dp"
+                        app:layout_constraintEnd_toStartOf="@+id/contador4"
+                        app:layout_constraintHorizontal_bias="0.708"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/tierra_4_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tierra_4_2"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/restar4"
+                        app:layout_constraintVertical_bias="0.114"
+                        app:srcCompat="@drawable/azul" />
+
+                    <ImageView
+                        android:id="@+id/tierra_4_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="45dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/sumar4"
+                        app:layout_constraintHorizontal_bias="0.495"
+                        app:layout_constraintStart_toEndOf="@+id/restar4"
+                        app:layout_constraintTop_toBottomOf="@+id/contador4"
+                        app:layout_constraintVertical_bias="0.225"
+                        app:srcCompat="@drawable/blanco" />
+
+                    <ImageView
+                        android:id="@+id/tierra_4_3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_marginEnd="52dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/tierra_4_2"
+                        app:layout_constraintTop_toBottomOf="@+id/sumar4"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:srcCompat="@drawable/rojo" />
+
+                    <ImageView
+                        android:id="@+id/restar4_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/restar4"
+                        app:layout_constraintEnd_toStartOf="@+id/restar4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/restar4"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/restar" />
+
+                    <ImageView
+                        android:id="@+id/sumar4_5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/sumar4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/sumar4"
+                        app:layout_constraintTop_toTopOf="@+id/sumar4"
+                        app:srcCompat="@drawable/sumar" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/restar4_5"
+                        app:layout_constraintEnd_toEndOf="@+id/restar4_5"
+                        app:layout_constraintStart_toStartOf="@+id/restar4_5" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+5"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@+id/sumar4_5"
+                        app:layout_constraintEnd_toEndOf="@+id/sumar4_5"
+                        app:layout_constraintStart_toStartOf="@+id/sumar4_5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

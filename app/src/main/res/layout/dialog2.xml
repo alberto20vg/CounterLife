@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/dialg_border">
+
+    <ImageView
+        android:id="@+id/sumar5Dialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="65dp"
+        app:srcCompat="@drawable/sumar" />
+
+    <ImageView
+        android:id="@+id/sumarDialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/sumar" />
+
+    <TextView
+        android:id="@+id/contadorTierra2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="0"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/restarDialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/restar" />
+
+    <ImageView
+        android:id="@+id/restar5Dialog"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/restar" />
+
+</LinearLayout>
