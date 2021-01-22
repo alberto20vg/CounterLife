@@ -17,7 +17,7 @@ import androidx.lifecycle.ViewModelProviders;
 public class MainActivity extends AppCompatActivity {
     TextView contador1, contador2, contador3, contador4,
             contadorTierra1, contadorTierra2;
-
+//probar git en android
     ImageView sumar1, restar1, tierra_1_1, tierra_1_2, tierra_1_3,
             sumar2, restar2, tierra_2_1, tierra_2_2, tierra_2_3,
             sumar3, restar3, tierra_3_1, tierra_3_2, tierra_3_3,
